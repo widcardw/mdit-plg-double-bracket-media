@@ -1,0 +1,19 @@
+// Vitest Snapshot v1
+
+exports[`media > should parse pictures > 
+      "<p><img src=\\"/path/to/image.jpeg\\" alt=\\"path/to/image.jpeg\\"></p>
+      "
+     1`] = `
+"<p><img src=\\"/path/to/image.jpeg\\" alt=\\"path/to/image.jpeg\\"></p>
+"
+`;
+
+exports[`media > should parse pictures 1`] = `
+"<p><img src=\\"/path/to/image.jpeg\\" alt=\\"path/to/image.jpeg\\"></p>
+"
+`;
+
+exports[`media > should remove given prefix and add provided certain prefix 1`] = `
+"<p><img src=\\"/src/avatar.png\\" alt=\\"src/avatar.png\\"></p>
+"
+`;
