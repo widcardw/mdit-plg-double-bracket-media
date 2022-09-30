@@ -25,11 +25,21 @@ md.use(DoubleBracketMedia, {
   removePrefix: 'public/',
   /**
    * (Optional) after removing the provided prefix,
-   * param `addPrefix` will be added to the front of url
+   * param `addPrefix` will be added to the front of url.
+   *
+   * For example, if the params are `{ removePrefix: 'public/', addPrefix: 'src/' }`,
+   * then it will parse ![[public/path/to/img.jpg|img]] into
+   * <img src="/src/path/to/img.jpg" alt="img" ... >
    */
   addPrefix: ''
 })
 ```
+
+## Supported media
+
+- pictures: `jpg`, `jpeg`, `png`, `gif`, `webp` and so on
+- videos (based on browser): `mp4`, `webm`
+- audio: `mp3`
 
 
 ## License
