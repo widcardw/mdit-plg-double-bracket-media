@@ -39,7 +39,7 @@ const DoubleBracketMedia: MarkdownIt.PluginWithOptions<DoubleBracketMediaProps> 
       if (options.addPrefix)
         link = options.addPrefix + link
 
-      if (!link.match(/(.+?)\.([A-Za-z0-9]{1,4})/))
+      if (!link.match(/(.+?)\.([A-Za-z0-9]{1,4})$/))
         return false
 
       let result = ''
